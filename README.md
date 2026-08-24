@@ -9,6 +9,8 @@ catálogo em PDF e só responde com base no que encontra ali. Se a informação
 não estiver no documento, ele diz isso claramente em vez de alucinar.
 
 ---
+**PROJETO NO AR:** aplicação online (Deploy no Render, por ser gratuito demora um pouco para ele "acordar". Geralmente de 30 a 60 segundos) 
+(https://gingatech.onrender.com)
 
 ## 1. Descrição geral do projeto
 
