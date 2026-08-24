@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ginga · Assistente Ginga Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__brand">
+        <span class="eyebrow">GINGA TECH </span>
+        <h1 class="wordmark">Ginga<span class="wordmark__dot">.</span></h1>
+      </div>
+    </header>
+
+    <svg class="wave" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true">
+      <path
+        class="wave__path"
+        d="M0 20 C 50 0, 100 40, 150 20 S 250 0, 300 20 S 400 40, 450 20 S 550 0, 600 20 S 700 40, 750 20 S 850 0, 900 20 S 1000 40, 1050 20 S 1150 0, 1200 20"
+        fill="none"
+      />
+    </svg>
+
+    <main class="chat" aria-live="polite">
+      <div class="chat__scroll" id="chatScroll">
+        <div class="msg msg--bot">
+          <div class="msg__bubble">Eai! Eu sou o assistente da <strong>Ginga Tech</strong>. Posso te ajudar com informações sobre formações, valores, carga horária, requisitos de hardware, políticas de reembolso e mais... tudo direto do nosso catálogo oficial.</div>
+        </div>
+      </div>
+
+    <div class="suggestions" id="suggestions">
+      <button class="chip" data-q="Quais são as formações disponíveis?">Formações</button>
+      <button class="chip" data-q="Qual o valor dos cursos?">Valores</button>
+      <button class="chip" data-q="Como funciona o reembolso?">Reembolso</button>
+    </div>
+
+      <form class="composer" id="composerForm">
+        <input
+          type="text"
+          id="perguntaInput"
+          class="composer__input"
+          placeholder="Escreva sua pergunta sobre a Ginga Tech..."
+          autocomplete="off"
+          maxlength="400"
+        />
+        <button type="submit" class="composer__send" id="sendBtn" aria-label="Enviar pergunta">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 12L20 4L13 20L11 13L4 12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+          </svg>
+        </button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <span>Ginga Tech Educação e Tecnologia Ltda. · Assistente com IA — respostas baseadas no catálogo oficial.</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
